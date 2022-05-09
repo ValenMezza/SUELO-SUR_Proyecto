@@ -1,49 +1,48 @@
 header {
-    width: 100vw;
-    height: 30vh;
-    background-color: yellow;
-    display: block;
-    text-align: center;
-    justify-content: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header img {
+  width: 100vw;
+  height: 30vh;
+  background-color: yellow;
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2vh;
-}
-
-header nav {
+    margin-bottom: 2vh; }
+  header nav {
     display: block;
     margin-top: 1vh;
     text-align: center;
     text-decoration: none;
-    color: black;
-}
+    color: black; }
+    header nav ul {
+      list-style-type: none;
+      margin-top: 1vh;
+      text-align: center;
+      color: black; }
+    header nav li {
+      display: inline;
+      padding-left: 5%;
+      padding-right: 5%; }
+      header nav li a {
+        padding: 1%;
+        text-decoration: none;
+        color: black;
+        border: black 2px solid;
+        background-color: white; }
+        header nav li a:hover {
+          background-color: gray; }
 
-header nav ul {
-    list-style-type: none;
-    margin-top: 1vh;
-    text-align: center;
-    color: black;
-}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black; }
+  h1:hover {
+    color: #791212; }
 
-header nav li {
-    display: inline;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-header nav li a {
-    padding: 1%;
-    text-decoration: none;
-    color: black;
-    border: black 2px solid;
-    background-color: white;
-}
-
-header nav li a:hover {
-    background-color: gray;
-}
+p {
+  color: black; }
+  p:hover {
+    background-color: yellow;
+    padding: 2%; }
