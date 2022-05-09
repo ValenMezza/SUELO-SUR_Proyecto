@@ -1,0 +1,51 @@
+$color: yellow;
+
+
+header {
+    width: 100vw;
+    height: 30vh;
+    background-color: $color;
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+    }
+
+    nav {
+        display: block;
+        margin-top: 1vh;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+
+        ul {
+            list-style-type: none;
+            margin-top: 1vh;
+            text-align: center;
+            color: black;
+        }
+
+        li {
+            display: inline;
+            padding-left: 5%;
+            padding-right: 5%;
+
+            a {
+                &:hover{
+                    background-color: gray;
+                }
+                padding: 1%;
+                text-decoration: none;
+                color: black;
+                border: black 2px solid;
+                background-color: white;
+            }
+        }
+    }
+}
