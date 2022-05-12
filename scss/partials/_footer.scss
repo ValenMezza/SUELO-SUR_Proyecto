@@ -1,0 +1,90 @@
+@import "../variables/-variables.scss";
+@import "../sass2/maps";
+@import "../sass2/extend";
+
+
+footer {
+    width: $ancho;
+    display: block;
+    color: rgb(0, 0, 0);
+    background: $fondo-gradiente-celeste;
+    margin-top: 5vh;
+
+
+    & h2 {
+        display: block;
+        color: rgb(255, 255, 255);
+        border: solid black black none black 2px;
+        background-color: rgba(35, 129, 206, 0);
+        text-align: $alinear-al-centro;
+    }
+
+    & h3 {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 1vh;
+    }
+
+    & p {
+        font-size: 0.6rem;
+        text-align: $alinear-al-centro;
+        padding-bottom: 1vh;
+    }
+
+    & li {
+        display: block;
+        list-style: none;
+
+    }
+
+    .flex-container {
+        display: flex;
+        width: $ancho;
+        padding-left: 1%;
+        @extend .flex-container;
+
+    }
+
+    .flex-item__web {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-right: 1vw;
+        text-align: end;
+        width: $ancho - 70vw;
+        & img {
+            width: 2vw;
+        }
+    }
+
+    .flex-item__contact {
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30vw;
+        & li {
+            display: flex;
+            text-align: flex-start;
+            justify-content: start;
+        }
+    }
+
+
+
+    .flex-item__icono {
+        display: block;
+        width: $ancho - 60vw;
+        & img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .flex-item__redes {
+        width: fit-content;
+        margin-bottom: 1vh
+    }
+}

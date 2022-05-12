@@ -1,0 +1,15 @@
+@import "../variables/-variables.scss";
+
+@mixin flexibilizar-centrar {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin fuentes {
+    font-family: $tipo-de-letra;
+    font-style: normal;
+}
+@mixin estilos-ancla {
+    text-decoration: none;
+    color: $fcolor;
+    font-family: $tipo-de-letra;
+}

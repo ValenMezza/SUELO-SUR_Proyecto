@@ -1,0 +1,6 @@
+@import "../variables/-variables.scss";
+@import "../sass2/maps";
+@import "../sass2/extend";
+body{
+    background-color: $fondo-body;
+}

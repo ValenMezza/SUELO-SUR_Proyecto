@@ -1,0 +1,17 @@
+@import "../variables/-variables.scss";
+
+.flex-container{
+    width: $ancho;
+    background-color: $fondo-gradiente-celeste;
+    font-family: $tipo-de-letra;
+    color: $fcolor;
+}
+.grid-item__articulo{
+    background-color: $fondo-gradiente;
+    color: $fcolor;
+    font-family: $tipo-de-letra;
+    & button:hover{
+        background-color: $celeste;
+        color: $fcolor;
+    }
+}
