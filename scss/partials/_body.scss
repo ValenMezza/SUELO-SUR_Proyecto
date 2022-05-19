@@ -3,4 +3,10 @@
 @import "../sass2/extend";
 body{
     background-color: $fondo-body;
+    width: $ancho;
+    overflow-x:hidden ;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
