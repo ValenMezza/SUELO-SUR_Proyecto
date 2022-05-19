@@ -45,53 +45,6 @@
         padding-left: 1vw;
     }
 
-    /*
-    .header nav{
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-column-gap: 5px;
-        grid-template-rows: repeat(1,50px);
-        background-color: rgb(226, 178, 6);
-        column-gap: 2vw;
-        border: solid rgba(2, 2, 2, 0.9);
-        justify-content: center;
-        padding: 2vh;
-        padding: 2vw;
-        grid-template-areas: "nav-header__nosotros nav-header__ubicacion nav-header__contacto nav-header__cuenta";
-    }
-    .nav-header__nosotros{
-        display: flex;
-        font-size: small;
-        font-weight: bolder;
-        align-items: center;
-        grid-area: nav-header__nosotros;
-    }
-    .nav-header__ubicacion{
-        display: flex;
-        font-weight: bolder;
-        align-items: center;
-        grid-area: nav-header__ubicacion;
-    }
-    .nav-header__contacto{
-        display: flex;
-        font-weight: bolder;
-        align-items: center;
-        grid-area: nav-header__contacto;
-    }
-    .nav-header__cuenta{
-        display: flex;
-        font-weight: bolder;
-        align-items: center;
-        grid-area: nav-header__cuenta;
-    }
-    header div{
-        display: flex;
-    }
-    .nav-header a{
-        display: flex;
-    }
-    */
-
     .grid-item div {
         padding-top: 5vh;
         padding-bottom: 5vh;
