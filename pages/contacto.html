@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/icono-suelosur.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/prueba.css">
     <title>Suelo Sur SAS</title>
-    <meta name="description" content="Tenemos todo lo que necesitas para tu obra! desde áridos de todo tipo, contenedores, Alquiler de maquinaria, y mucho más. Te invitamos a conocernos." data-head-react="true">
+    <meta name="description"
+        content="Tenemos todo lo que necesitas para tu obra! desde áridos de todo tipo, contenedores, Alquiler de maquinaria, y mucho más. Te invitamos a conocernos."
+        data-head-react="true">
 </head>
 
 <body>
     <header>
         <div>
-            <a href="../index.html"><img class="icono-suelo" height="100%" width="350px" src="../imagenes/suelosur.jpg" alt=""></a>
+            <a href="../index.html"><img class="icono-suelo" height="100%" width="350px" src="../imagenes/suelosur.jpg"
+                    alt=""></a>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -51,60 +55,40 @@
                             <a href="../pages/nosotros.html" class="nav-link active">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Cuenta</a>
+                            <a href="./cuenta.html" class="nav-link active">Cuenta</a>
                         </li>
                         <li class="nav-item">
                             <a href="../pages/ubicacion.html" class="nav-link active">Ubicación</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
-                            aria-label="Search">
-                        <button type="button" class="btn btn-secondary">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <h1 class="titulo-pag">Contacto</h1>
-    <h3>¡Dejá tus datos y nos contactaremos en breve!</h3>
+    <div class="shadow">
+        <h1 class="titulo-pag">Contacto</h1>
+        <h3>¡Dejá tus datos y nos contactaremos en breve!</h3>
+        <form class="shadow p-3 mb-5 bg-body rounded">
 
-    <div class="form-contact-compra">
-        <form class="row g-3">
 
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="inputName4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
 
-            <div class="col-4">
-                <label for="inputAddress2" class="form-label">Número de telefono</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="+54 9">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-            <div class="col-4">
-                <label for="inputAddress2" class="form-label">Número de telefono (Opcional)</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="+54 9">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Número de teléfono</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+54 9">
             </div>
-            <div class="col-10">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejános tu consulta </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="col-2">
-                <label for="inputAddress2" class="form-label">Altura</label>
-                <input type="number" class="form-control" id="inputAddress2">
-            </div>
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
 
         </form>
     </div>

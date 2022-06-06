@@ -7,11 +7,8 @@
     color: $fcolor;
 }
 .grid-item__articulo{
-    background-color: $fondo-gradiente;
+    background-color: $celeste;
     color: $fcolor;
     font-family: $tipo-de-letra;
-    & button:hover{
-        background-color: $celeste;
-        color: $fcolor;
-    }
+
 }

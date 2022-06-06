@@ -2,9 +2,13 @@
 @import "../sass2/maps";
 @import "../sass2/extend";
 
+
+
 .grid-item div {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+
 }
 
 .grid-container {
@@ -13,19 +17,23 @@
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: repeat(2, fr);
-    grid-template-areas:
-        "grid-item__articulo grid-item__aside"
-        "grid-item__articulo ."
+    grid-template-areas: "grid-item__articulo grid-item__aside"
+        "grid-item__articulo .";
+
+    .grid-item__aside {
+        grid-area: grid-item__aside;
+    }
 }
 
 
 
 .grid-item__articulo {
     width: 22vw;
-    grid-area: grid-item_articulo;
+    grid-area: grid-item__articulo;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    color: white;
+    background-color: #2d83bd;
     border-radius: 5%;
     margin-bottom: 3vh;
 
@@ -33,16 +41,37 @@
 
 
     &:hover {
-        background: $fondo-gradiente;
-        color: $fcolor;
-    }
-    & button{
-        color: $fcolor;
-    }
-    & button:hover {
-        background-color: rgb(255, 255, 255);
+        background: $amarillo;
         color: black;
+
+        & .card-title {
+            color: black;
+        }
+
+        & .card-body .card-text {
+            color: black;
+        }
+
+        & button {
+            color: white;
+            background-color: #2d83bd;
+
+            & a {
+                color: white;
+            }
+        }
     }
+
+    button {
+
+        padding: 1vw;
+        background-color: $amarillo;
+        & a{
+            color: black;
+        }
+
+    }
+
 
     & img {
         display: flex;
@@ -54,7 +83,7 @@
 }
 
 
-main {
+.grid-item {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -72,36 +101,39 @@ main {
     }
 
     & .card-title {
-        font-size: 1.5rem;
+        color: white;
+        font-size: 1rem;
         font-weight: bold;
         text-align: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        user-select: none;
     }
 
-    & .card-body .card-text {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 0.8rem;
+    & .card-body {
+        & .card-text {
+            display: flex;
+            color: white;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+        }
+        & a{
+            text-decoration: none;
+        }
     }
 
-    & .card-body button{
-        color: black;
-    }
 
-    & .card-title:hover {
-        color: $celeste
-    }
 
     & img {
-        border: solid black 2px;
+        border: solid black 3px;
     }
 }
+
 .grid-item__aside {
     display: flexbox;
     grid-area: grid-item__aside;
-    background-color: rgb(255, 255, 255);
+    background-color: $amarillo;
     text-align: center;
     border-radius: 10px;
     margin-top: 6vh;
@@ -109,62 +141,89 @@ main {
     padding-bottom: 50px;
     margin-right: 1vw;
     height: fit-content;
-}
-    aside{
-        &:hover {
-            background-color: $celeste;
+
+    button {
+        background-color: $celeste;
+
+        & a {
             color: white;
-        }
-        
-        & h3 {
-            font-size: 1.5rem;
-            font-weight: bolder;
-            margin: 1vw;
-        }
-        
-        & h4 {
-            font-size: 1.3rem;
-        }
-        
-        & li {
-            font-size: 0.8rem;
-            display: block;
-            margin: 5px;
-            text-align: start;
-            padding-left: 0.1vw;
-            justify-items: start;
-        }
-        
-        & ul {
-            text-align: start;
-            margin-left: 0.2vw;
-        }
-        &:hover {
-            background: $fondo-gradiente-celeste;
-            color: white;
-        }
-        & h3 {
-            font-size: 1.5rem;
-            font-weight: bolder;
-            margin: 1vw;
-        }
-        & h4 {
-            font-size: 1.3rem;
-        }
-        & li {
-            font-size: 0.8rem;
-            display: block;
-            margin: 5px;
-            text-align: start;
-            padding-left: 0.1vw;
-            justify-items: start;
-        }
-        & ul {
-            text-align: start;
-            margin-left: 0.2vw;
         }
     }
-a{
-    color: $fcolor;
+}
+
+aside {
+    &:hover {
+        background-color: $celeste;
+        color: white;
+
+        & button {
+            background-color: $amarillo;
+
+            & a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    & a {
+        text-decoration: none;
+    }
+
+
+
+    & h3 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin: 1vw;
+    }
+
+    & h4 {
+        font-size: 1.3rem;
+    }
+
+    & li {
+        font-size: 0.8rem;
+        display: block;
+        margin: 5px;
+        text-align: start;
+        padding-left: 0.1vw;
+        justify-items: start;
+    }
+
+    & ul {
+        text-align: start;
+        margin-left: 0.2vw;
+    }
+
+
+
+    & h3 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin: 1vw;
+    }
+
+    & h4 {
+        font-size: 1.3rem;
+    }
+
+    & li {
+        font-size: 0.8rem;
+        display: block;
+        margin: 5px;
+        text-align: start;
+        padding-left: 0.1vw;
+        justify-items: start;
+    }
+
+    & ul {
+        text-align: start;
+        margin-left: 0.2vw;
+        text-decoration: none;
+    }
+}
+
+a {
     text-decoration: none;
 }

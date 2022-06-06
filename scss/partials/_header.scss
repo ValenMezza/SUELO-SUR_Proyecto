@@ -4,7 +4,15 @@
 @import "../sass2/mixins";
 
 header {
-    background: $fondo-gradiente;
+    background: whitesmoke;
+    max-height: fit-content;
+
+
+    .flex-item_icono {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .icono-suelo {
         display: block;
@@ -12,10 +20,33 @@ header {
         width: $tamaño-img;
     }
 
-    nav {
-        color: $fcolor;
-        @include estilos-ancla;
-        @include fuentes;
-    }
 
+    nav {
+        color: black;
+        border: solid $celeste 0.5vh;
+        height: fit-content;
+        @include estilos-ancla;
+        @include fuentes;           
+
+        .container-fluid h1{
+            background-color: white;
+        }
+
+        ul {
+            height: fit-content;
+
+            li{
+                margin-right: 1vw;
+            }
+            & a {
+                color: black;
+                text-decoration: none;
+                list-style: none;
+                background-color: white;
+                border: solid $celeste 0.2vw;
+                justify-content: space-around;
+            }
+        }
+
+    }
 }
