@@ -88,7 +88,7 @@ section {
   section .carousel-inner {
     display: block;
     margin: auto;
-    width: 50vw;
+    width: 70vw;
     height: 50vh;
     border: solid #2d83bd 0.5vw; }
     section .carousel-inner img {
@@ -290,6 +290,15 @@ aside ul {
 a {
   text-decoration: none; }
 
+.nosotros-info {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh; }
+  .nosotros-info img {
+    margin-left: auto;
+    margin-right: auto; }
+
 .shadow {
   width: 70vw;
   margin-left: auto;
@@ -408,6 +417,22 @@ footer {
     margin-bottom: 1vh;
     justify-content: flex-end;
     color: white; }
+  footer .categorias-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  footer .categorias-footer a {
+    color: #fff755;
+    width: 100vw; }
+  footer .categorias-footer li {
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw; }
 
 body {
   margin: 0;
@@ -594,11 +619,6 @@ body {
   text-align: center;
   font-size: 2.5rem; }
 
-#location {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px; }
-
 fieldset label {
   display: block;
   width: 25vw;
@@ -625,33 +645,6 @@ div .boton {
   display: block;
   justify-content: center;
   margin: auto; }
-
-.grid-container__nosotros {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 90px 500px repeat(2, 100px);
-  grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-
-.grid-item_1 {
-  grid-area: grid-item_1;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center; }
-
-.grid-item_2 {
-  grid-area: grid-item_2;
-  text-align: center; }
-
-.grid-item_7 {
-  grid-area: grid-item_7;
-  text-align: start; }
-
-.grid-item_8 {
-  grid-area: grid-item_8;
-  padding: 0px 50px; }
 
 footer {
   width: 100vw;
@@ -895,11 +888,6 @@ body {
     color: black;
     text-decoration: none; } }
 
-#location {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px; }
-
 .form-contact-compra {
   font-size: 1rem; }
 
@@ -931,33 +919,6 @@ div .boton {
   display: block;
   justify-content: center;
   margin: auto; }
-
-.grid-container__nosotros {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 90px 500px repeat(2, 100px);
-  grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-
-.grid-item_1 {
-  grid-area: grid-item_1;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center; }
-
-.grid-item_2 {
-  grid-area: grid-item_2;
-  text-align: center; }
-
-.grid-item_7 {
-  grid-area: grid-item_7;
-  text-align: start; }
-
-.grid-item_8 {
-  grid-area: grid-item_8;
-  padding: 0px 50px; }
 
 footer {
   width: 100vw;
@@ -1164,10 +1125,6 @@ body {
     display: block;
     text-align: center;
     font-size: 2.5rem; }
-  #location {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; }
   fieldset label {
     display: block;
     width: 25vw;
@@ -1178,28 +1135,6 @@ body {
     margin-left: 2vw; }
   fieldset input {
     margin-left: 2vw; }
-  .grid-container__nosotros {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 90px 500px repeat(2, 100px);
-    grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-  .grid-item_1 {
-    grid-area: grid-item_1;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center; }
-  .grid-item_2 {
-    grid-area: grid-item_2;
-    text-align: center; }
-  .grid-item_7 {
-    grid-area: grid-item_7;
-    text-align: start; }
-  .grid-item_8 {
-    grid-area: grid-item_8;
-    padding: 0px 50px; }
   footer {
     width: 100vw;
     display: block;
@@ -1402,10 +1337,6 @@ body {
     display: block;
     text-align: center;
     font-size: 2.5rem; }
-  #location {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; }
   fieldset label {
     display: block;
     width: 25vw;
@@ -1416,28 +1347,6 @@ body {
     margin-left: 2vw; }
   fieldset input {
     margin-left: 2vw; }
-  .grid-container__nosotros {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 90px 500px repeat(2, 100px);
-    grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-  .grid-item_1 {
-    grid-area: grid-item_1;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center; }
-  .grid-item_2 {
-    grid-area: grid-item_2;
-    text-align: center; }
-  .grid-item_7 {
-    grid-area: grid-item_7;
-    text-align: start; }
-  .grid-item_8 {
-    grid-area: grid-item_8;
-    padding: 0px 50px; }
   footer {
     width: 100vw;
     display: block;
@@ -1628,10 +1537,6 @@ body {
     display: block;
     text-align: center;
     font-size: 2.5rem; }
-  #location {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; }
   fieldset label {
     display: block;
     width: 25vw;
@@ -1642,28 +1547,6 @@ body {
     margin-left: 2vw; }
   fieldset input {
     margin-left: 2vw; }
-  .grid-container__nosotros {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 90px 500px repeat(2, 100px);
-    grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-  .grid-item_1 {
-    grid-area: grid-item_1;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center; }
-  .grid-item_2 {
-    grid-area: grid-item_2;
-    text-align: center; }
-  .grid-item_7 {
-    grid-area: grid-item_7;
-    text-align: start; }
-  .grid-item_8 {
-    grid-area: grid-item_8;
-    padding: 0px 50px; }
   footer {
     width: 100vw;
     display: block;
@@ -1854,10 +1737,6 @@ body {
     display: block;
     text-align: center;
     font-size: 2.5rem; }
-  #location {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px; }
   fieldset label {
     display: block;
     width: 25vw;
@@ -1868,28 +1747,6 @@ body {
     margin-left: 2vw; }
   fieldset input {
     margin-left: 2vw; }
-  .grid-container__nosotros {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 90px 500px repeat(2, 100px);
-    grid-template-areas: "grid-item_1 grid-item_1 grid-item_1 grid-item_1" "grid-item_2 grid-item_2 grid-item_2 grid-item_2" "grid-item_7 grid-item_7 grid-item_7 grid-item_7" "grid-item_8 grid-item_8 grid-item_8 grid-item_8"; }
-  .grid-item_1 {
-    grid-area: grid-item_1;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center; }
-  .grid-item_2 {
-    grid-area: grid-item_2;
-    text-align: center; }
-  .grid-item_7 {
-    grid-area: grid-item_7;
-    text-align: start; }
-  .grid-item_8 {
-    grid-area: grid-item_8;
-    padding: 0px 50px; }
   footer {
     width: 100vw;
     display: block;

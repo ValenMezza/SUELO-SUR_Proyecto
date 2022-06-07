@@ -99,4 +99,25 @@ footer {
         justify-content: flex-end;
         color: white;
     }
+    .categorias-footer{
+        & ul{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.7rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & a{
+            color: $amarillo;
+            width: 100vw;
+        }
+        & li{
+            text-align: center;
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1vw;
+        }
+    }
 }
