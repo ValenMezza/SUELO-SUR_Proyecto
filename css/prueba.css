@@ -93,7 +93,8 @@ section {
     border: solid #2d83bd 0.5vw; }
     section .carousel-inner img {
       width: 100vw;
-      height: 50vh; }
+      height: 50vh;
+      object-fit: cover; }
     section .carousel-inner .carousel-item h5 {
       color: #2d83bd;
       font-weight: bold;
