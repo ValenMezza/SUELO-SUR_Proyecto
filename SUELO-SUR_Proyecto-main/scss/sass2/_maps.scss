@@ -1,0 +1,10 @@
+@import "../variables/-variables.scss";
+
+$reseteo:(
+    margin: 0,
+    padding: 0,
+);
+body{
+    margin: map-get($reseteo, margin);
+    padding: map-get($reseteo, padding);
+}

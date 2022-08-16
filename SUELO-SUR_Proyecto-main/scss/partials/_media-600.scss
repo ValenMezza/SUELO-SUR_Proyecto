@@ -1,0 +1,320 @@
+@import "../variables/-variables.scss";
+@import "../sass2/maps";
+@import "../sass2/extend";
+
+
+
+
+@media screen and (max-width: 650px) {
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        background-color: rgb(221, 223, 225);
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        scrollbar-width: 100vw;
+    }
+
+    header {
+        background-color: white;
+
+        .navbar-md-dark .navbar-toggler {
+            color: rgba(255, 255, 255, .55);
+            border-color: rgba(255, 255, 255, .1);
+        }
+    }
+
+    header img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icono-suelo {
+        width: 15vw;
+        height: 20vh;
+    }
+
+    header div {
+        display: flex;
+        justify-content: center;
+    }
+
+    header div a:hover {
+        background-color: rgba(128, 128, 128, 0.208);
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    .grid-item div {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: repeat(3, fr);
+        grid-template-areas:
+            "grid-item grid-item grid-item"
+            ". grid-item__aside .";
+
+    }
+
+    .grid-item {
+        grid-area: grid-item;
+    }
+
+
+    .grid-item__articulo h5 {
+
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .grid-item__articulo p {
+        font-size: 0.8rem;
+    }
+
+    .grid-item__articulo {
+        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        ;
+    }
+
+    .grid-item .grid-item__articulo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 36vw;
+    }
+
+    img .card-img-top {
+        width: 500v;
+    }
+
+    .grid-item__aside {
+        display: flexbox;
+        grid-area: grid-item__aside;
+        background-color: $amarillo;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 6vh;
+        border-color: $celeste;
+        padding-bottom: 50px;
+        margin-right: 1vw;
+        height: fit-content;
+    }
+
+    aside {
+        font-size: 16px;
+
+        &:hover {
+            background-color: $celeste;
+            color: white;
+
+            button {
+                color: black;
+                background-color: $amarillo;
+            }
+        }
+
+        & button {
+            background-color: $celeste;
+        }
+
+        & h3 {
+            font-size: 5rem;
+
+            margin: 1vw;
+        }
+
+        & h4 {
+            font-size: 1rem;
+        }
+
+        & li {
+            font-size: 0.8rem;
+            display: block;
+            margin: 5px;
+            text-align: start;
+            padding-left: 0.1vw;
+            justify-items: start;
+        }
+
+        & ul {
+            text-align: start;
+            margin-left: 0.2vw;
+        }
+
+
+
+        & h3 {
+            font-size: 1rem;
+            font-weight: bolder;
+            margin: 1vw;
+        }
+
+        & h4 {
+            margin-right: auto;
+            font-size: 0.9rem;
+        }
+
+        & h5 {
+            font-size: 0.8rem;
+        }
+
+        & li {
+            font-size: 0.8rem;
+            display: flex;
+            margin: 5px;
+            text-align: start;
+            padding-left: 0.1vw;
+            justify-items: start;
+        }
+
+        & ul {
+            text-align: start;
+            margin-left: 0.2vw;
+        }
+    }
+
+    a {
+        color: $fcolor;
+        text-decoration: none;
+    }
+
+    .form-contact-compra {
+        font-size: 1rem;
+    }
+
+    .titulo-pag {
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+
+    fieldset label {
+        display: block;
+        width: 25vw;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        margin-left: 1vw;
+    }
+
+    fieldset textarea {
+        margin-left: 2vw;
+    }
+
+    fieldset input {
+        margin-left: 2vw;
+    }
+
+
+
+    footer {
+        width: $ancho;
+        display: block;
+        color: rgb(255, 255, 255);
+        background: $celeste;
+        margin-top: 5vh;
+        bottom: 0;
+
+        a {
+            width: fit-content;
+        }
+
+        & h2 {
+            display: block;
+            color: $celeste;
+            border: solid black black none black 2px;
+            background-color: $amarillo;
+            text-align: $alinear-al-centro;
+        }
+
+        & h3 {
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 1vh;
+        }
+
+        & p {
+            font-size: 0.6rem;
+            text-align: $alinear-al-centro;
+            padding-bottom: 1vh;
+        }
+
+        & li {
+            color: white;
+            display: block;
+            list-style: none;
+
+        }
+
+        .flex-container {
+            display: flex;
+            width: $ancho;
+            padding-left: 1%;
+
+        }
+
+        .flex-item__web {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-end;
+            margin-left: auto;
+            margin-right: 2vw;
+            text-align: end;
+            color: white;
+
+            & img {
+                width: 2vw;
+            }
+        }
+
+        .flex-item__contact {
+            width: $ancho - 70vw;
+            display: flex;
+            justify-items: flex-start;
+            text-align: left;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+
+            & li {
+                display: flex;
+                text-align: flex-start;
+                justify-content: start;
+                color: white;
+            }
+        }
+
+
+        .flex-item__icono {
+            display: block;
+            width: $ancho;
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                display: flex;
+                width: $tamaño-img;
+                margin: auto;
+                margin-right: auto;
+            }
+        }
+
+        .flex-item__redes {
+            width: fit-content;
+            display: flex;
+            margin-bottom: 1vh;
+            justify-content: flex-end;
+            color: white;
+        }
+    }
+}

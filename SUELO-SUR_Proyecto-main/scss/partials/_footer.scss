@@ -1,0 +1,123 @@
+@import "../variables/-variables.scss";
+@import "../sass2/maps";
+@import "../sass2/extend";
+
+
+footer {
+    width: $ancho;
+    display: block;
+    color: rgb(255, 255, 255);
+    background: $celeste;
+    margin-top: 5vh;
+    bottom: auto;
+
+    a{
+        width: fit-content;
+    }
+    & h2 {
+        display: block;
+        color: $celeste;
+        border: solid black black none black 2px;
+        background-color: $amarillo;
+        text-align: $alinear-al-centro;
+    }
+
+    & h3 {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 1vh;
+    }
+
+    & p {
+        font-size: 0.6rem;
+        text-align: $alinear-al-centro;
+        padding-bottom: 1vh;
+    }
+
+    & li {
+        color: white;
+        display: block;
+        list-style: none;
+
+    }
+
+    .flex-container {
+        display: flex;
+        width: $ancho;
+        padding-left: 1%;
+        @extend .flex-container;
+    }
+
+    .flex-item__web {
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        margin-left: auto;
+        margin-right: 2vw;
+        text-align: end;
+        color: white;
+        & img {
+            width: 2vw;
+        }
+    }
+
+    .flex-item__contact {
+        width: $ancho - 70vw;
+        display: flex;
+        justify-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+
+        & li {
+            display: flex;
+            text-align: flex-start;
+            justify-content: start;
+            color: white;
+        }
+    }
+
+    .flex-item__icono{
+        display: block;
+        width: $ancho;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            display: flex;
+            width: $tamaño-img;
+            margin: auto;
+            margin-right: auto;
+        }
+    }
+
+    .flex-item__redes {
+        width: fit-content;
+        display: flex;
+        margin-bottom: 1vh;
+        justify-content: flex-end;
+        color: white;
+    }
+    .categorias-footer{
+        & ul{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.7rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & a{
+            color: $amarillo;
+            width: 100vw;
+        }
+        & li{
+            text-align: center;
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1vw;
+        }
+    }
+}
